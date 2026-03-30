@@ -1,5 +1,3 @@
-import { Diff } from "lucide-react";
-
 export const identity = {
   name: "Leonardo Cavallaro",
   role: "AI & Data Analytics Engineer (M.Sc. Student at PoliTo/KAIST)",
