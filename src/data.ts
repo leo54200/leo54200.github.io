@@ -1,3 +1,5 @@
+import { Diff } from "lucide-react";
+
 export const identity = {
   name: "Leonardo Cavallaro",
   role: "AI & Data Analytics Engineer (M.Sc. Student at PoliTo/KAIST)",
@@ -12,21 +14,21 @@ export const projects = [
     id: 1,
     title: "Generative Reinforcement Learning",
     description: "Developed a Diffusion-based generative model (Residual MLP) to synthesize high-fidelity state transitions for RL replay buffers. Achieved accelerated agent convergence in SUMO traffic environments by implementing a 20:1 Update-to-Data (UTD) ratio, effectively mitigating sample inefficiency.",
-    tags: ["Diffusion Models", "PyTorch", "SUMO-RL", "MARL"],
+    tags: ["Diffusion Models", "PyTorch", "SAC", "REDQ", "SynthER", "SUMO-RL", "MARL"],
     github: "https://github.com/alicebanaudi/Experience-Replay-for-Action-Generalization-and-Multi-Agent-System", 
   },
   {
     id: 2,
     title: "SDXL Photomosaic Engine",
     description: "Architected a generative pipeline utilizing Stable Diffusion XL and K-Means clustering to assemble large-scale images from semantically relevant micro-tiles. Optimized the latent diffusion process to balance visual fidelity with high-dimensional data processing constraints.",
-    tags: ["SDXL", "Computer Vision", "K-Means", "Python"],
+    tags: ["SDXL", "Computer Vision", "K-Means", "Python", "Image Generation", "Diffusion Models"],
     github: "https://github.com/m4rk-git/Visual-Generation-Contest",
   },
   {
     id: 3,
     title: "Multi-Agent AI Tutor",
     description: "Designed a full-stack orchestration layer for real-time student-AI interactions. Leveraged OpenAI LLM APIs to create specialized virtual study avatars, managing context-aware memory and secure API interaction via a Laravel/Vue.js architecture.",
-    tags: ["LLMs", "Laravel", "Vue.js", "API Design"],
+    tags: ["LLMs", "Laravel", "JavaScript", "API Design"],
     github: "https://github.com/leo54200/AI-Powered-Study-Group-Website",
   },
   {
@@ -80,16 +82,24 @@ export const education = [
 
 export const technicalSkills = [
   {
-    category: "AI & Deep Learning",
-    items: ["PyTorch", "TensorFlow", "Hugging Face", "SDXL", "Generative RL"]
+    category: "Programming Languages",
+    items: ["Python", "Rust", "C", "Java", "SQL", "Kotlin", "JavaScript", "TypeScript", "ARM Assembly"]
   },
   {
-    category: "Systems & Low-Level",
-    items: ["C", "ARM Assembly", "Rust", "Embedded Systems", "Memory Mapping"]
+    category: "Deep Learning & GenAI",
+    items: ["PyTorch", "TensorFlow", "Hugging Face", "Stable Diffusion XL (SDXL)"]
   },
   {
-    category: "Software Engineering",
-    items: ["Python", "Java", "SQL", "Kotlin", "JavaScript", "Docker", "Git"]
+    category: "Reinforcement Learning",
+    items: ["SAC", "REDQ", "SynthER", "Multi-Agent RL (MARL)", "SUMO-RL"]
+  },
+    {
+    category: "Data Science",
+    items: ["NumPy", "Pandas", "Scikit-learn", "Matplotlib"]
+  },
+  {
+    category: "Infrastructure & Tools",
+    items: ["Docker", "Git/GitHub", "React", "Tailwind CSS"]
   }
 ];
 
