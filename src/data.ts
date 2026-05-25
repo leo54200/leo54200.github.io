@@ -4,7 +4,7 @@ export const identity = {
   angle: "Architecting the future of Data-Driven Systems through Generative AI and Reinforcement Learning.",
   email: "leo.cavallaro.02@gmail.com",
   linkedin: "https://www.linkedin.com/in/leonardo-cavallaro",
-  aboutMe: "I am a Computer Engineering M.Sc. student at Politecnico di Torino, specializing in AI and Data Analytics. Having recently completed a research exchange at KAIST in South Korea, I focus on architecting high-performance systems that bridge the gap between sophisticated AI theory and robust software engineering. My expertise lies at the intersection of Generative Models and Reinforcement Learning. Whether I am optimizing Diffusion-based transition models with high UTD ratios or engineering scalable data pipelines, I am driven by the challenge of making deep neural architectures run efficiently in real-world production environments. Having bridged the 9,000km gap between PoliTo and KAIST, I’m now focused on my next challenge in AI and Software Engineering. Always down to talk shop over an espresso or to exchange notes on high-performance data systems.",
+  aboutMe: "I am a Computer Engineering M.Sc. student at Politecnico di Torino specializing in AI and Data Analytics. I focus on architecting high-performance systems that bridge the gap between advanced machine learning theory and robust software engineering. My expertise lies at the intersection of Generative Models and Reinforcement Learning—whether that involves optimizing Diffusion-based architectures with high UTD ratios or engineering scalable data pipelines for production environments. Driven by the challenge of making deep neural networks run efficiently at scale, I am always eager to collaborate on high-performance data systems or discuss the next breakthrough in AI."
 };
 
 export const projects = [
@@ -36,14 +36,21 @@ export const projects = [
     tags: ["ARM Assembly", "C", "Embedded Systems", "Bare-Metal"],
     github: "https://github.com/leo54200/Pac-Man-Game-for-ARM-on-LandTiger-1768",
   },
+  {
+    id: 5,
+    title: "Remote-File-System-in-Rust",
+    description: "Engineered a scalable remote file system in Rust using asynchronous I/O. Implemented custom communication protocols to handle remote file streaming, synchronization, and secure data transfer within a distributed architecture.",
+    tags: ["Rust", "Systems Programming", "Network Protocols", "Async I/O"],
+    github: "https://github.com/Luffy65/Remote-File-System-in-Rust",
+  },
 ];
 export const experience = [
   {
     id: 1,
-    role: "Visiting Research Scholar / Student",
-    company: "KAIST",
-    description: "Conducted advanced research dynamically interfacing with top-tier AI laboratories. Specizalized in Generative AI techniques, expanding domain knowledge applied to distributed reinforcement learning.",
-    period: "2023 - Present"
+    role: "AI Safety Researcher (Master Thesis)",
+    company: "",
+    period: "",
+    description: ""
   }
 ];
 
