@@ -4,7 +4,7 @@ export const identity = {
   angle: "Architecting the future of Data-Driven Systems through Generative AI and Reinforcement Learning.",
   email: "leo.cavallaro.02@gmail.com",
   linkedin: "https://www.linkedin.com/in/leonardo-cavallaro",
-  aboutMe: "I am a Computer Engineering M.Sc. student at Politecnico di Torino specializing in AI and Data Analytics. I focus on architecting high-performance systems that bridge the gap between advanced machine learning theory and robust software engineering. My expertise lies at the intersection of Generative Models and Reinforcement Learning—whether that involves optimizing Diffusion-based architectures with high UTD ratios or engineering scalable data pipelines for production environments. Driven by the challenge of making deep neural networks run efficiently at scale, I am always eager to collaborate on high-performance data systems or discuss the next breakthrough in AI."
+  aboutMe: "I am a Computer Engineering M.Sc. student at Politecnico di Torino specializing in AI and Data Analytics. I focus on architecting high-performance systems that bridge the gap between advanced machine learning theory and robust software engineering. My expertise lies at the intersection of Generative Models and Reinforcement Learning, whether that involves optimizing Diffusion-based architectures with high UTD ratios or engineering scalable data pipelines for production environments. Driven by the challenge of making deep neural networks run efficiently at scale, I am always eager to collaborate on high-performance data systems or discuss the next breakthrough in AI."
 };
 
 export const projects = [
@@ -48,9 +48,9 @@ export const experience = [
   {
     id: 1,
     role: "AI Safety Researcher (Master Thesis)",
-    company: "",
-    period: "",
-    description: ""
+    company: "ELLIS Lab Alicante",
+    period: "2026 - Present",
+    description: "Researched AI Safety and mechanistic interpretability for text-to-image Diffusion Models within multi-agent workflows. Developed a real-time monitoring and latent-steering framework using PyTorch hooks and LangGraph to prevent safety violations and logical negation failures."
   }
 ];
 
