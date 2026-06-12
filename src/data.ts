@@ -1,6 +1,6 @@
 export const identity = {
   name: "Leonardo Cavallaro",
-  role: "AI & Data Analytics Engineer (M.Sc. Student at PoliTo/KAIST)",
+  role: "AI & Data Analytics Engineer (M.Sc. Student at PoliTo)",
   angle: "Architecting the future of Data-Driven Systems through Generative AI and Reinforcement Learning.",
   email: "leo.cavallaro.02@gmail.com",
   linkedin: "https://www.linkedin.com/in/leonardo-cavallaro",
