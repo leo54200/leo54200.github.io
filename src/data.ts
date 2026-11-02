@@ -1,10 +1,10 @@
 export const identity = {
   name: "Leonardo Cavallaro",
   role: "AI & Data Analytics Engineer (M.Sc. Student at PoliTo)",
-  angle: "Architecting the future of Data-Driven Systems through Generative AI and Reinforcement Learning.",
+  angle: "Understanding the Inner Workings of LLMs to Build Safer and More Trustworthy AI.",
   email: "leo.cavallaro.02@gmail.com",
   linkedin: "https://www.linkedin.com/in/leonardo-cavallaro",
-  aboutMe: "I am a Computer Engineering M.Sc. student at Politecnico di Torino specializing in AI and Data Analytics. I focus on architecting high-performance systems that bridge the gap between advanced machine learning theory and robust software engineering. My expertise lies at the intersection of Generative Models and Reinforcement Learning, whether that involves optimizing Diffusion-based architectures with high UTD ratios or engineering scalable data pipelines for production environments. Driven by the challenge of making deep neural networks run efficiently at scale, I am always eager to collaborate on high-performance data systems or discuss the next breakthrough in AI."
+  aboutMe: "I am a Computer Engineering M.Sc. student at Politecnico di Torino, specializing in AI and Data Analytics. My interests lie at the intersection of Deep Learning, Generative AI, Reinforcement Learning, and AI Safety. Through research experience at ELLIS Unit Alicante, I am exploring the internal mechanisms of Large Language Models, focusing on mechanistic interpretability, safety behaviors, and vulnerability to adversarial prompting. My previous work also includes diffusion-based generative models and reinforcement learning, with an emphasis on developing and optimizing deep learning architectures. I am passionate about understanding how intelligent systems work, making them more reliable and efficient."
 };
 
 export const projects = [
@@ -49,8 +49,8 @@ export const experience = [
     id: 1,
     role: "AI Safety Researcher (Master Thesis)",
     company: "ELLIS Lab Alicante",
-    period: "2026 - Present",
-    description: "Researched AI Safety and mechanistic interpretability for text-to-image Diffusion Models within multi-agent workflows. Developed a real-time monitoring and latent-steering framework using PyTorch hooks and LangGraph to prevent safety violations and logical negation failures."
+    period: "10/2026 - Present",
+    description: "Working on AI Safety and Red Teaming for Large Language Models. My research focuses on investigating how negation-based prompting techniques can bypass LLM safety mechanisms, evaluating model vulnerabilities, and exploring their internal representations to better understand the mechanisms behind safe and unsafe model behavior."
   }
 ];
 
@@ -92,7 +92,12 @@ export const technicalSkills = [
   },
   {
     category: "Deep Learning & GenAI",
-    items: ["PyTorch", "TensorFlow", "Hugging Face", "Stable Diffusion XL (SDXL)"]
+    items: ["PyTorch", "TensorFlow", "Hugging Face", "Transformers", "Diffusion Models", "SDXL"]
+  },
+  {
+    category: "AI Safety & Interpretability",
+    items: ["LLM Red Teaming", "Mechanistic Interpretability", "Adversarial Prompting", "Activation Analysis", "Representation Analysis"
+    ]
   },
   {
     category: "Reinforcement Learning",
@@ -104,14 +109,13 @@ export const technicalSkills = [
   },
   {
     category: "Infrastructure & Tools",
-    items: ["Docker", "Git/GitHub", "React", "Tailwind CSS"]
+    items: ["Docker", "Git/GitHub", "Linux", "CUDA", "Jupyter", "React", "Tailwind CSS"]
   }
 ];
 
 export const languages = [
   { name: "Italian", proficiency: "Native" },
   { name: "English", proficiency: "Fluent" },
-  { name: "Polish", proficiency: "Basic" }
 ];
 
-export const SHOW_EXPERIENCE = false; // Set to true to show the Experience section
+export const SHOW_EXPERIENCE = true;
