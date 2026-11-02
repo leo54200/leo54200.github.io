@@ -35,8 +35,7 @@ const Footer = () => {
           <div className="grid grid-cols-2 gap-4">
             <nav className="flex flex-col space-y-3">
               {[
-                'Home', 'About', 'Projects', 
-                ...(SHOW_EXPERIENCE ? ['Experience'] : [])
+                'Home', 'About', ...(SHOW_EXPERIENCE ? ['Experience'] : []), 'Projects'
               ].map((item) => (
                 <a 
                   key={item} 
