@@ -214,6 +214,37 @@ function AppContent() {
           </div>
         </section>
 
+        {SHOW_EXPERIENCE && (
+          <section id="experience" className="py-24 px-6 md:px-16 lg:px-24 scroll-mt-20 md:scroll-mt-0">
+            <div className="max-w-7xl mx-auto">
+              <DecodingTitle title="Experience" />
+              <div className="space-y-8 md:space-y-12">
+                {experience.map((exp, index) => (
+                  <motion.div
+                    key={exp.id}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    whileTap={{ scale: isMobile ? 0.98 : 1 }}
+                    viewport={{ once: true, margin: "-50px" }}
+                    transition={{ delay: index * 0.1, duration: 0.6 }}
+                    className="bg-white/50 dark:bg-[#22181C]/50 p-6 md:p-8 rounded-xl border border-gray-100 dark:border-[#476C9B]/10 hover:border-gray-200 dark:hover:border-[#476C9B]/30 transition-colors duration-300"
+                  >
+                    <div className="flex flex-col md:flex-row md:items-baseline md:justify-between mb-4 md:mb-2">
+                      <h3 className="text-xl md:text-2xl font-bold font-mono text-gray-900 dark:text-gray-100 transition-colors duration-300">
+                        {exp.role} <span className="text-[#476C9B] block md:inline mt-1 md:mt-0 whitespace-nowrap">@ {exp.company}</span>
+                      </h3>
+                      <span className="font-mono text-sm text-[#476C9B] mt-2 md:mt-0 bg-[#476C9B]/10 px-3 py-1 rounded inline-block self-start md:self-auto">
+                        {exp.period}
+                      </span>
+                    </div>
+                    <p className="text-sm md:text-base text-gray-600 dark:text-gray-400 leading-relaxed max-w-3xl transition-colors duration-300 mt-4 md:mt-0">{exp.description}</p>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
         {/* Projects Section */}
         <section id="projects" className="py-24 px-6 md:px-16 lg:px-24 bg-gray-50/50 dark:bg-[#1a1215]/50 transition-colors duration-300 scroll-mt-20 md:scroll-mt-0">
           <div className="max-w-7xl mx-auto">
@@ -256,37 +287,6 @@ function AppContent() {
             </div>
           </div>
         </section>
-
-        {SHOW_EXPERIENCE && (
-          <section id="experience" className="py-24 px-6 md:px-16 lg:px-24 scroll-mt-20 md:scroll-mt-0">
-            <div className="max-w-7xl mx-auto">
-              <DecodingTitle title="Experience" />
-              <div className="space-y-8 md:space-y-12">
-                {experience.map((exp, index) => (
-                  <motion.div 
-                    key={exp.id} 
-                    initial={{ opacity: 0, y: 20 }} 
-                    whileInView={{ opacity: 1, y: 0 }} 
-                    whileTap={{ scale: isMobile ? 0.98 : 1 }}
-                    viewport={{ once: true, margin: "-50px" }}
-                    transition={{ delay: index * 0.1, duration: 0.6 }}
-                    className="bg-white/50 dark:bg-[#22181C]/50 p-6 md:p-8 rounded-xl border border-gray-100 dark:border-[#476C9B]/10 hover:border-gray-200 dark:hover:border-[#476C9B]/30 transition-colors duration-300"
-                  >
-                    <div className="flex flex-col md:flex-row md:items-baseline md:justify-between mb-4 md:mb-2">
-                      <h3 className="text-xl md:text-2xl font-bold font-mono text-gray-900 dark:text-gray-100 transition-colors duration-300">
-                        {exp.role} <span className="text-[#476C9B] block md:inline mt-1 md:mt-0 whitespace-nowrap">@ {exp.company}</span>
-                      </h3>
-                      <span className="font-mono text-sm text-[#476C9B] mt-2 md:mt-0 bg-[#476C9B]/10 px-3 py-1 rounded inline-block self-start md:self-auto">
-                        {exp.period}
-                      </span>
-                    </div>
-                    <p className="text-sm md:text-base text-gray-600 dark:text-gray-400 leading-relaxed max-w-3xl transition-colors duration-300 mt-4 md:mt-0">{exp.description}</p>
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-          </section>
-        )}
 
         {/* Education Section */}
         <section id="education" className="py-24 px-6 md:px-16 lg:px-24 bg-gray-50/50 dark:bg-[#1a1215]/50 transition-colors duration-300 scroll-mt-20 md:scroll-mt-0">
@@ -384,7 +384,7 @@ function AppContent() {
             <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }}>
               <h2 className="text-3xl md:text-4xl font-mono font-bold mb-4 md:mb-6">Let's Connect</h2>
               <p className="text-gray-600 dark:text-gray-400 mb-8 md:mb-10 text-base md:text-lg">
-                I’m always looking to discuss the future of Generative RL, data-driven architectures, or new opportunities. Whether you have a specific project in mind or just want to exchange ideas, my inbox is always open.
+                I'm always open to discussing new ideas, exploring research directions, and collaborating on projects in Artificial Intelligence. Whether it's about LLMs, AI Safety, Reinforcement Learning, or emerging AI technologies, I'd be happy to connect and exchange ideas.
               </p>
               
               <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6">

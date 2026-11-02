@@ -19,13 +19,13 @@ const Footer = () => {
             {identity.name}
           </h3>
           <p className="text-gray-400 leading-relaxed font-sans text-sm md:text-base">
-            Bridging the gap between Complex AI Research and Production-Ready Systems.          </p>
+            Bridging AI Research, Innovation, and Real-World Impact.          </p>
           <div className="flex items-center gap-3 mt-4">
             <span className="relative flex h-3 w-3">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
             </span>
-            <span className="text-sm font-mono text-gray-400">Seeking AI & Software Engineering Internships</span>
+            <span className="text-sm font-mono text-gray-400">Open to AI, Research & Engineering Opportunities</span>
           </div>
         </div>
 
@@ -102,7 +102,7 @@ const Footer = () => {
           © {new Date().getFullYear()} Leonardo Cavallaro - Built with React & Tailwind.
         </p>
         <p className="text-sm text-gray-500 font-mono">
-          Current Location: PoliTo, Italy
+          Current Location: ELLIS Unit Alicante, Alicante, Spain
         </p>
       </div>
     </motion.footer>

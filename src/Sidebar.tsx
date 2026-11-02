@@ -17,8 +17,8 @@ export default function Sidebar({ isDesktopOpen, toggleDesktop }: SidebarProps) 
   const links = [
     { name: 'Home', icon: Home, href: '#home' },
     { name: 'About', icon: User, href: '#about' },
-    { name: 'Projects', icon: FolderGit2, href: '#projects' },
     ...(SHOW_EXPERIENCE ? [{ name: 'Experience', icon: Briefcase, href: '#experience' }] : []),
+    { name: 'Projects', icon: FolderGit2, href: '#projects' },
     { name: 'Education', icon: GraduationCap, href: '#education' },
     { name: 'Skills', icon: Wrench, href: '#skills' },
     { name: 'Contact', icon: Mail, href: '#contact' },
