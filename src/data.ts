@@ -47,8 +47,8 @@ export const projects = [
 export const experience = [
   {
     id: 1,
-    role: "AI Safety Researcher (Master Thesis)",
-    company: "ELLIS Lab Alicante",
+    role: "Research Intern",
+    company: "ELLIS Unit Alicante",
     period: "10/2026 - Present",
     description: "Working on AI Safety and Red Teaming for Large Language Models. My research focuses on investigating how negation-based prompting techniques can bypass LLM safety mechanisms, evaluating model vulnerabilities, and exploring their internal representations to better understand the mechanisms behind safe and unsafe model behavior."
   }
